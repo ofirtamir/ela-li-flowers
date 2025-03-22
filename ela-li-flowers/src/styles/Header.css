@@ -1,0 +1,65 @@
+.header {
+    background-color: #f8f1f1;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #8D6E63;
+    font-weight: bold;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #5D4037;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #A1887F;
+  }
+  
+  /* כפתור ההמבורגר - מוסתר בדסקטופ */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* רספונסיביות */
+  @media (max-width: 768px) {
+    .nav {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: #f8f1f1;
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .nav.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
