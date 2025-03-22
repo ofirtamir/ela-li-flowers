@@ -35,7 +35,7 @@ function Contact() {
   return (
     <div className="contact-container">
       <h2>צור קשר</h2>
-      <p>נשמח לשמוע ממך! מלא/י את הטופס ונחזור אליך בהקדם.</p>
+      <p>נשמח לשמוע ממך! מלא/י את הטופס ונחזור אליך בהקדם</p>
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
