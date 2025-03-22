@@ -3,7 +3,7 @@ import '../styles/ProductCard.css';
 function ProductCard({ title, image, price, description }) {
   // הכנת ההודעה לוואטסאפ
   const message = `שלום, אני מעוניין לרכוש את "${title}" במחיר ${price} ש"ח`;
-  const whatsappLink = `https://wa.me/972586011011?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://wa.me/972586017017?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="product-card">

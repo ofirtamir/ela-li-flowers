@@ -14,8 +14,9 @@ function Home() {
   return (
     <div className="home-container">
       <section className="hero-section">
-        <h2>ברוכים הבאים ל-<span>Ela-Li Flowers</span></h2>
-        <p>סטודיו בוטיק ליצירת זרי פרחים, סידורים ועיצוב בפרחים מיובשים באווירה קסומה.</p>
+              <h2>ברוכים הבאים </h2>
+              <h2>Ela-Li Flowers</h2>
+        <p>סטודיו בוטיק ליצירת זרי פרחים, סידורים ועיצוב בפרחים מיובשים באווירה קסומה</p>
 
         {/* כפתור פעיל לקטלוג */}
         <Link to="/products" className="hero-button">לצפייה בקטלוג</Link>

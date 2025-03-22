@@ -5,14 +5,14 @@ function Workshops() {
   const workshops = [
     {
       title: 'סדנת זרי אביב',
-      image: 'https://images.unsplash.com/photo-1603190287605-e6ade32fa852',
-      description: 'בואו ללמוד איך להרכיב זר אביב צבעוני מפרחים טריים ומיובשים.',
+      image: "/images/image10.png",
+      description: 'בואו ללמוד איך להרכיב זר אביב צבעוני מפרחים טריים ומיובשים',
       price: 250
     },
     {
       title: 'סדנת פרחים מיובשים',
-      image: 'https://images.unsplash.com/photo-1567265833339-875f53ff110c',
-      description: 'חוויה יצירתית וייחודית עם פרחים מיובשים בעיצוב אישי.',
+      image: "/images/image11.png",
+      description: 'חוויה יצירתית וייחודית עם פרחים מיובשים בעיצוב אישי',
       price: 300
     }
   ];
@@ -29,12 +29,22 @@ function Workshops() {
               <h3>{ws.title}</h3>
               <p>{ws.description}</p>
               <p className="price">{ws.price} ₪</p>
+
+              {/* כפתור וואטסאפ */}
+              <a
+                href={`https://wa.me/972586017017?text=שלום, אני מעוניין להזמין את הסדנה: ${encodeURIComponent(ws.title)} במחיר ${ws.price} ש"ח`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="whatsapp-btn"
+              >
+                הזמן סדנה
+              </a>
             </div>
           </div>
         ))}
       </div>
 
-      {/* החלק החדש - טופס הרשמה */}
+      {/* טופס הרשמה */}
       <WorkshopForm />
     </div>
   );

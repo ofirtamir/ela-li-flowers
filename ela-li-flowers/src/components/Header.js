@@ -1,26 +1,28 @@
 import { Link } from 'react-router-dom';
-import '../styles/Header.css';
 import { useState } from 'react';
+import '../styles/Header.css';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="header">
-      <div className="logo">Ela-Li Flowers</div>
-
-      <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-        <Link to="/" onClick={() => setMenuOpen(false)}>דף הבית</Link>
-        <Link to="/products" onClick={() => setMenuOpen(false)}>קטלוג</Link>
-        <Link to="/workshops" onClick={() => setMenuOpen(false)}>סדנאות</Link>
-        <Link to="/about" onClick={() => setMenuOpen(false)}>אודות</Link>
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>צור קשר</Link>
-      </nav>
-
-      {/* כפתור ההמבורגר */}
+      {/* המבורגר ימין במובייל */}
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </div>
+
+      {/* הלוגו - מוצג רק במובייל */}
+      <h1 className="site-title">Ela-Li Flowers</h1>
+
+      {/* תפריט ניווט */}
+      <nav className={`nav ${menuOpen ? 'open' : ''}`}>
+        <Link to="/">דף הבית</Link>
+        <Link to="/products">קטלוג</Link>
+        <Link to="/workshops">סדנאות</Link>
+        <Link to="/about">אודות</Link>
+        <Link to="/contact">צור קשר</Link>
+      </nav>
     </header>
   );
 }

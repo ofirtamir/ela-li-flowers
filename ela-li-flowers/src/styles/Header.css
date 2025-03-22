@@ -1,24 +1,37 @@
 .header {
     background-color: #f8f1f1;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    direction: rtl;
+    padding: 20px 40px;
     position: sticky;
     top: 0;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    direction: rtl;
   }
   
-  .logo {
-    font-size: 1.8rem;
+  /* המבורגר מוצג בימין במובייל */
+  .hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    order: 1;
+  }
+  
+  /* כותרת במרכז במובייל */
+  .site-title {
+    font-size: 2rem;
     color: #8D6E63;
     font-weight: bold;
+    margin: 0;
+    order: 2;
+    text-align: center;
+    flex: 1;
   }
   
+  /* תפריט ברירת מחדל סגור במובייל */
   .nav {
-    display: flex;
-    gap: 30px;
+    display: none;
   }
   
   .nav a {
@@ -33,33 +46,38 @@
     color: #A1887F;
   }
   
-  /* כפתור ההמבורגר - מוסתר בדסקטופ */
-  .hamburger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
+  /* פתיחת תפריט במובייל */
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f1f1;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
   }
   
-  /* רספונסיביות */
-  @media (max-width: 768px) {
-    .nav {
-      position: absolute;
-      top: 70px;
-      right: 0;
-      background-color: #f8f1f1;
-      flex-direction: column;
-      width: 100%;
-      display: none;
-      gap: 20px;
-      padding: 20px;
-    }
-  
-    .nav.open {
-      display: flex;
+  /* תצוגת מחשב */
+  @media (min-width: 768px) {
+    .site-title {
+      display: none; /* מעלים לוגו בדסקטופ */
     }
   
     .hamburger {
-      display: block;
+      display: none; /* מעלים המבורגר בדסקטופ */
+    }
+  
+    .header {
+      justify-content: center;
+    }
+  
+    .nav {
+      display: flex !important;
+      flex-direction: row;
+      gap: 50px;
+      position: static;
     }
   }
   
