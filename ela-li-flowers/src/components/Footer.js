@@ -23,7 +23,7 @@ function Footer() {
       </div>
 
       <div className="footer-location">
-        <p>סטודיו הפרחים שלנו ממוקם בתל אביב</p>
+        <p>סטודיו הפרחים שלנו ממוקם בתל אביב </p>
       </div>
     </footer>
   );
