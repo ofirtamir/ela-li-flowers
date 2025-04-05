@@ -4,22 +4,26 @@ import '../styles/Home.css';
 function Home() {
   const galleryImages = [
     "/images/image.png",
+    "/images/image2.png",
+    "/images/image3.png",
     "https://images.unsplash.com/photo-1587316745621-3757c7076f7b",
     "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
-    "https://images.unsplash.com/photo-1603190287605-e6ade32fa852",
-    "/images/image2.png",
-    "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+    "https://images.unsplash.com/photo-1603190287605-e6ade32fa852"
   ];
 
   return (
     <div className="home-container">
       <section className="hero-section">
-              <h2>ברוכים הבאים </h2>
-              <h2>Ela-Li Flowers</h2>
-        <p>סטודיו בוטיק ליצירת זרי פרחים, סידורים ועיצוב בפרחים מיובשים באווירה קסומה</p>
+        <div className="hero-content">
+          <h1>Ela-Li Flowers</h1>
+          <p>סטודיו בוטיק לעיצוב זרי פרחים טבעיים ומיובשים באווירה קסומה ואסתטית</p>
+          <Link to="/products" className="hero-button">לצפייה בקטלוג</Link>
+        </div>
+      </section>
 
-        {/* כפתור פעיל לקטלוג */}
-        <Link to="/products" className="hero-button">לצפייה בקטלוג</Link>
+      <section className="about-section">
+        <h2>קצת עלינו</h2>
+        <p>אנחנו מאמינים ביופי של הטבע, כל זר נוצר מתוך השראה ואהבה לצבעים, צורות ופריחה עונתית.</p>
       </section>
 
       <section className="gallery-section">
@@ -29,6 +33,11 @@ function Home() {
             <img key={index} src={img} alt={`gallery-${index}`} />
           ))}
         </div>
+      </section>
+
+      <section className="cta-section">
+        <p>רוצים להתייעץ או להזמין זר בעיצוב אישי?</p>
+        <Link to="/contact" className="hero-button">דברו איתנו</Link>
       </section>
     </div>
   );
