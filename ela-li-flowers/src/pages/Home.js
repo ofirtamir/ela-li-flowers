@@ -13,7 +13,16 @@ function Home() {
 
   return (
     <div className="home-container">
-      <section className="hero-section">
+      <section
+        className="hero-section"
+        style={{
+          backgroundImage: "url('/images/image2.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat"
+        }}
+      >
+        <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Ela-Li Flowers</h1>
           <p>סטודיו בוטיק לעיצוב זרי פרחים טבעיים ומיובשים באווירה קסומה ואסתטית</p>
