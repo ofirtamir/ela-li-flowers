@@ -33,23 +33,26 @@ function Workshops() {
       <div className="workshops-grid">
         {workshops.map((ws, index) => (
           <div className="workshop-card" key={index}>
-            <img src={ws.image} alt={ws.title} />
-            <div className="workshop-info">
-              <h3>{ws.title}</h3>
-              <p>{ws.description}</p>
-              <p className="price">  {ws.price} ₪ למשתתף</p>
+  <img src={ws.image} alt={ws.title} />
+  <div className="workshop-content">
+    <div className="workshop-info">
+      <h3>{ws.title}</h3>
+      <p>{ws.description}</p>
+      <p className="price">  {ws.price} ₪ למשתתף</p>
+    </div>
 
-              {/* כפתור וואטסאפ */}
-              <a
-                href={`https://wa.me/972586017017?text=שלום, אני מעוניין להזמין את הסדנה: ${encodeURIComponent(ws.title)} במחיר ${ws.price} ש"ח`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="whatsapp-btn"
-              >
-                הזמן סדנה
-              </a>
+    <a
+      href={`https://wa.me/972586017017?text=שלום, אני מעוניין להזמין את הסדנה: ${encodeURIComponent(ws.title)} במחיר ${ws.price} ש"ח`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="whatsapp-btn"
+    >
+      הזמן סדנה
+    </a>
             </div>
-          </div>
+            
+</div>
+
         ))}
       </div>
 

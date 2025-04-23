@@ -4,8 +4,17 @@ import '../styles/Home.css';
 function Home() {
   const galleryImages = [
     "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409919/IMG_5813_-_Copy_fq3wzp.jpg",
-    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409917/IMG_9028_pbm0tn.jpg",
-    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409916/IMG_9027_akts0t.jpg"
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409916/IMG_9027_akts0t.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409926/IMG_5807_qlbuz7.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409918/IMG_5817_hictj6.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409917/IMG_5765_wgrwxa.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409914/IMG_7493_kxcqwt.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745423014/IMG_5360_1_wdqq34.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745423018/IMG_5793_caqxgs.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745423016/IMG_5401_hi0psa.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409917/IMG_7494_oovzpe.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745413454/image10_ny1syd.png",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745423015/IMG_5784_-_Copy_2_nz8gec.jpg"
     
   ];
 

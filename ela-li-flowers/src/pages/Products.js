@@ -15,37 +15,37 @@ const products = [
     description: 'זר מיובש שנשזר בעבודת יד ונשזר בחוט ראטן לכלי זכוכית בגודל 1 ליטר. הזר יינתן בבקבוק זכוכית בצבע שקוף/ חום שקפקף וינטג'
   },
   {
-    title: 'זר בגודל 0.5 ליטר*',
+    title: 'זר בגודל 0.5 ליטר',
     image: 'https://res.cloudinary.com/dic1dbce9/image/upload/v1745409926/IMG_5807_qlbuz7.jpg',
     price: 60,
     description: 'זר מיובש שנשזר בעבודת יד ונשזר בחוט ראטן לכלי זכוכית בגודל 0.5 ליטר. הזר יינתן בבקבוק זכוכית בצבע שקוף/ חום שקפקף וינטג'
     }
   ,
   {
-    title: 'זר בגודל 0.25 ליטר*',
+    title: 'זר בגודל 0.25 ליטר',
     image: 'https://res.cloudinary.com/dic1dbce9/image/upload/v1745409919/IMG_5360_aikw6s.jpg',
-    price: 60,
+    price: 40,
     description: 'זר מיובש שנשזר בעבודת יד ונשזר בחוט ראטן לכלי זכוכית בגודל 0.25 ליטר. הזר יינתן בבקבוק זכוכית בצבע שקוף/ חום שקפקף וינטג'
     }
   ,
   {
-    title: 'זר בגודל 0.15 ליטר*',
+    title: 'זר בגודל 0.15 ליטר',
     image: 'https://res.cloudinary.com/dic1dbce9/image/upload/v1745409920/IMG_5748_pykucj.jpg',
-    price: 10,
+    price: 25,
     description: 'זר מיובש שנשזר בעבודת יד ונשזר בחוט ראטן לכלי זכוכית בגודל 0.15 ליטר. הזר יינתן בבקבוק זכוכית בצבע שקוף/ חום שקפקף וינטג'
     }
     ,
     {
       title: 'זר לראש',
       image: 'https://res.cloudinary.com/dic1dbce9/image/upload/v1745412752/IMG_7268_ygnsu3.jpg',
-      price: 200,
+      price: 90,
       description: 'זר מיובש לראש שנשזר בעבודת יד, מקשט את הראש ואת הבית'
     }
     ,
     {
       title: 'זר ביצוב אישי',
       image: 'https://res.cloudinary.com/dic1dbce9/image/upload/v1745413965/ChatGPT_Image_Apr_23_2025_04_12_38_PM_j10tfv.png',
-      price: 50,
+      price: 80,
       description: 'יש לך ויזן משלך? רוצה בקבוק בצבעים אחרים או בגודל אחר? ניתן לחשוב יחד איתי על זר משלכן  לאירוע הבא ואייצר בעבורכם מזכרת ייחודית'
     }
     

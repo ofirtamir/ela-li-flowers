@@ -20,6 +20,7 @@ function Header() {
         <Link to="/">דף הבית</Link>
         <Link to="/products">קטלוג</Link>
         <Link to="/workshops">סדנאות</Link>
+        <Link to="/event-design">עיצוב אירועים</Link>
         <Link to="/about">אודות</Link>
         <Link to="/contact">צור קשר</Link>
       </nav>
