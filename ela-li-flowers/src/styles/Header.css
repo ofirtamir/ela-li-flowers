@@ -1,83 +1,82 @@
+/* 📁 src/styles/Header.css */
+
 .header {
-    background-color: #f8f1f1;
-    padding: 20px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    direction: rtl;
-  }
-  
-  /* המבורגר מוצג בימין במובייל */
-  .hamburger {
-    font-size: 2rem;
-    cursor: pointer;
-    order: 1;
-  }
-  
-  /* כותרת במרכז במובייל */
+  background-color: #f8f1f1;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+
+/* כפתור המבורגר מימין */
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  order: 2;
+}
+
+/* כותרת במרכז במובייל */
+.site-title {
+  font-size: 2rem;
+  color: #8D6E63;
+  font-weight: bold;
+  margin: 0;
+  order: 1;
+  text-align: center;
+  flex: 1;
+}
+
+.nav {
+  display: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #5D4037;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #A1887F;
+}
+
+.nav.open {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f1f1;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
   .site-title {
-    font-size: 2rem;
-    color: #8D6E63;
-    font-weight: bold;
-    margin: 0;
-    order: 2;
-    text-align: center;
-    flex: 1;
-  }
-  
-  /* תפריט ברירת מחדל סגור במובייל */
-  .nav {
     display: none;
   }
-  
-  .nav a {
-    text-decoration: none;
-    color: #5D4037;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: color 0.3s;
+
+  .hamburger {
+    display: none;
   }
-  
-  .nav a:hover {
-    color: #A1887F;
+
+  .header {
+    justify-content: center;
   }
-  
-  /* פתיחת תפריט במובייל */
-  .nav.open {
-    display: flex;
-    flex-direction: column;
-    background-color: #f8f1f1;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    padding: 20px;
-    gap: 20px;
+
+  .nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 50px;
+    position: static;
   }
-  
-  /* תצוגת מחשב */
-  @media (min-width: 768px) {
-    .site-title {
-      display: none; /* מעלים לוגו בדסקטופ */
-    }
-  
-    .hamburger {
-      display: none; /* מעלים המבורגר בדסקטופ */
-    }
-  
-    .header {
-      justify-content: center;
-    }
-  
-    .nav {
-      display: flex !important;
-      flex-direction: row;
-      gap: 50px;
-      position: static;
-    }
-  }
-  
+}
