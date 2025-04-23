@@ -3,12 +3,10 @@ import '../styles/Home.css';
 
 function Home() {
   const galleryImages = [
-    "/images/image.png",
-    "/images/image2.png",
-    "/images/image3.png",
-    "https://images.unsplash.com/photo-1587316745621-3757c7076f7b",
-    "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
-    "https://images.unsplash.com/photo-1603190287605-e6ade32fa852"
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409919/IMG_5813_-_Copy_fq3wzp.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409917/IMG_9028_pbm0tn.jpg",
+    "https://res.cloudinary.com/dic1dbce9/image/upload/v1745409916/IMG_9027_akts0t.jpg"
+    
   ];
 
   return (
@@ -16,7 +14,7 @@ function Home() {
       <section
         className="hero-section"
         style={{
-          backgroundImage: "url('/images/image2.png')",
+          backgroundImage: "url('https://res.cloudinary.com/dic1dbce9/image/upload/v1745409918/IMG_5817_hictj6.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat"
@@ -25,14 +23,18 @@ function Home() {
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Ela-Li Flowers</h1>
-          <p>סטודיו בוטיק לעיצוב זרי פרחים טבעיים ומיובשים באווירה קסומה ואסתטית</p>
+          <p>סטודיו בוטיק לעיצוב זרי פרחים טבעיים ומיובשים באווירה קסומה וייחודית</p>
           <Link to="/products" className="hero-button">לצפייה בקטלוג</Link>
         </div>
       </section>
 
       <section className="about-section">
-        <h2>קצת עלינו</h2>
-        <p>אנחנו מאמינים ביופי של הטבע, כל זר נוצר מתוך השראה ואהבה לצבעים, צורות ופריחה עונתית.</p>
+        <h2>קצת על אלה-לי</h2>
+        <p>כלל הזרים נשזרים בעבודת יד ונבחרים בקפידה. מתוך אמונה כי היופי נמצא בטבעיות של הפרחים. כל זר נוצר מתוך השראה ואהבה לפרחים ולצבעים שבטבע, בהתאם לשיטת השזירה הנבחרת ולפריחה העונתית.
+        </p>
+        <p>הזרים המיובשים עברו תהליך ייבוש וישארו איתכם לתמיד והזרים הטריים נבחרים בקפידה בהתאם לעונה ולמקום האירוע.</p>
+        <p>הפרחים המיובשים של אלה- לי משלבים בין זר פרחים טבעי ואמיתי לבין יצירה שנשארת איתכן.ם לתקופה ממושכת. ניתנת האפשרות לרכוש זרים יחידים או מקבצים בבחירה אישית.</p>
+        <p>את כלל הזרים המיושבים ניתן לרכוש ביחידים ובמקבצים וניתנת האפשרות להוסיף חלוקי נחל לשמירה על יציבות הזר.</p>
       </section>
 
       <section className="gallery-section">

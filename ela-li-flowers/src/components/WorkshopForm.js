@@ -71,8 +71,8 @@ function WorkshopForm() {
         required
       >
         <option value="">בחר סדנה</option>
-        <option value="סדנת זרי אביב">סדנת זרי אביב</option>
-        <option value="סדנת פרחים מיובשים">סדנת פרחים מיובשים</option>
+        <option value="סדנה פרטית לזרים לראש  מפרחים מיובשים">סדנה פרטית לזרים לראש  מפרחים מיובשים</option>
+        <option value="סדנת שזירה פרטית מפרחים מיובשים לכלי זכוכית">סדנת שזירה פרטית מפרחים מיובשים לכלי זכוכית</option>
       </select>
 
       <textarea
