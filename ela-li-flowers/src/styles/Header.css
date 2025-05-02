@@ -60,7 +60,8 @@
 .hamburger {
   font-size: 2rem;
   cursor: pointer;
-  order: 2;
+  order: -1;
+  margin-left: 10px;
 }
 
 .site-title {
@@ -93,13 +94,13 @@
   flex-direction: column;
   background-color: #f8f1f1;
   position: absolute;
-  top: 80px;
+  top: 70px;
   right: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
   padding: 20px;
   gap: 20px;
   z-index: 99;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
