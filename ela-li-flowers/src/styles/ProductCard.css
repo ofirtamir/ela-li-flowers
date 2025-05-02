@@ -52,6 +52,7 @@
   font-weight: bold;
 }
 
+/* תיקון כפתור רכישה */
 .buy-button {
   background-color: #8D6E63;
   color: #fff;
@@ -61,8 +62,11 @@
   cursor: pointer;
   transition: background-color 0.3s;
   text-align: center;
-  margin-top: auto; /* מוודא שהכפתור תמיד למטה */
-  margin-bottom: 0;
+  margin-top: 20px;
+  width: calc(100% - 40px);
+  max-width: 400px;
+  align-self: center;
+  box-sizing: border-box;
 }
 
 .buy-button:hover {
