@@ -52,7 +52,7 @@ function Home() {
               key={index}
               src={img}
               alt={`gallery-${index}`}
-              loading="lazy"
+              
               width="300"
               height="200"
             />
